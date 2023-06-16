@@ -1,0 +1,24 @@
+<div id="align-card" class="mt-5">
+    <ng-container *ngFor="let fav of favBooks">
+      <div class="row m-2 h-150">
+        <div class="card shadow m-3 p-2" style="width: 17rem;" id="zoom">
+          <img [src]="fav.image" class="card-img-top" id="image" width="15cm" height="250cm">
+          <div class="card-body text-center" id="card-ele">
+            <h5 class="card-title">{{fav.title}}</h5>
+            <p class="card-text">By {{fav.author}}</p>
+            <p class="card-text">Category: {{fav.category}}</p>
+            <p class="card-text">Year: {{fav.date | date:'yyyy'}}</p>
+            
+          </div>
+          <button type="button" class="btn btn-outline-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z">
+              </path>
+            </svg>
+            <span class="m-2" (click)="delFav(fav.bookid)">Remove From Favourites</span>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>

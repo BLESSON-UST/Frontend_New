@@ -1,0 +1,10 @@
+#align-card{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#card-ele{
+    background-color: #fdf3e1;
+}
