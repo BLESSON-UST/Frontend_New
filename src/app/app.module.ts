@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     RecommendationComponent,
     RegisterComponent,
     FavouritesComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    UserdashboardComponent
   ],
   imports: [
     BrowserModule,

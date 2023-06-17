@@ -1,9 +1,23 @@
 .cascading-right {
-    margin-right: -50px;
-  }
+
+  margin-right: auto;
+
+  margin-left: auto;
+
+  max-width: 500px;
+
+}
+
+
+
+
 
   @media (max-width: 991.98px) {
+
     .cascading-right {
+
       margin-right: 0;
+
     }
+
   }

@@ -1,14 +1,61 @@
 .rounded-t-5 {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+
+  border-top-left-radius: 0.5rem;
+
+  border-top-right-radius: 0.5rem;
+
+}
+
+
+
+
+@media (min-width: 992px) {
+
+  .rounded-tr-lg-0 {
+
+    border-top-right-radius: 0;
+
   }
 
-  @media (min-width: 992px) {
-    .rounded-tr-lg-0 {
-      border-top-right-radius: 0;
-    }
 
-    .rounded-bl-lg-5 {
-      border-bottom-left-radius: 0.5rem;
-    }
+
+
+  .rounded-bl-lg-5 {
+
+    border-bottom-left-radius: 0.5rem;
+
   }
+
+}
+
+.example-container mat-form-field + mat-form-field {
+
+  margin-left: 5px;
+
+}
+
+
+
+.example-right-align {
+
+  text-align: right;
+
+}
+
+
+
+input.example-right-align::-webkit-outer-spin-button,
+
+input.example-right-align::-webkit-inner-spin-button {
+
+  display: none;
+
+}
+
+
+
+input.example-right-align {
+
+  -moz-appearance: textfield;
+
+}

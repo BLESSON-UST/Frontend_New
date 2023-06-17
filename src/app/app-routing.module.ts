@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { RecommendationComponent } from './recommendation/recommendation.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'Register', component: RegisterComponent},
   { path: 'Recommend', component: RecommendationComponent, canActivate: [AuthGuard]},
   { path: 'Favourites', component: FavouritesComponent, canActivate: [AuthGuard]},
+  { path: 'User', component:UserdashboardComponent},
   { path: '**', component: PagenotfoundComponent }
   
 ];
